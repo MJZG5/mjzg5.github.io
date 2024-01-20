@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh; /* 使得主体占据整个视口高度 */
+}
+
+#sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #ccc; /* 添加分割线 */
+  color: #333; /* 修改文字颜色为深灰色 */
+}
+
+#sidebar h2 {
+  color: #555; /* 修改标题颜色为稍深的灰色 */
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sidebar li {
+  margin-bottom: 10px;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: #007BFF; /* 修改链接颜色为蓝色 */
+}
+
+#sidebar a:hover {
+  text-decoration: underline;
+}
+
+#content {
+  flex: 1;
+  padding: 20px;
+
+}
+.main-content {
+  margin-left: 300px; /* 为侧栏留出空间 */
+ 
+  box-sizing: border-box; /* 防止内边距影响元素宽度 */
+}

@@ -1,0 +1,37 @@
+/* 顶部横栏 */
+#custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  padding: 10px;
+  z-index: 1000;
+  transition: height 0.3s, background-color 0.3s; /* 添加背景颜色渐变效果 */
+}
+
+/* 横栏上的链接样式 */
+#custom-navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s; /* 添加颜色渐变效果 */
+}
+
+/* 鼠标悬停时横栏颜色变化 */
+#custom-navbar:hover {
+  background-color: #474545; /* 悬停时的背景颜色 */
+}
+
+/* 鼠标悬停时链接颜色变化 */
+#custom-navbar a:hover {
+  color: #0084ff; /* 悬停时的链接文字颜色 */
+}
+
+body {
+  padding-top: 30px;  /* 上边距为横栏的高度 + 20px（可根据需要调整） */
+}
+
+
