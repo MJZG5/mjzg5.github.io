@@ -1,0 +1,6 @@
+
+        .gradient-text {
+            background: linear-gradient(to right, #5f9aff, #fe7bcc); /* 渐变色 */
+            -webkit-background-clip: text; /* 让文字只在背景的区域显示 */
+            color: transparent; /* 隐藏文字的实际颜色 */
+        }

@@ -12,8 +12,7 @@ body {
   background-color: #f1f1f1;
   padding: 20px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  border-right: 1px solid #ccc; /* 添加分割线 */
-  color: #333; /* 修改文字颜色为深灰色 */
+  border-right: 1px solid #ccc; /* 添加分割线 *//* 修改文字颜色为深灰色 */
 }
 
 #sidebar h2 {
