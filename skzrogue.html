@@ -101,6 +101,47 @@
         button:hover {
             background: #2980b9;
         }
+        .final-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.final-left, .final-right {
+    flex: 1;
+}
+
+.final-left {
+    max-width: 300px;
+}
+
+.team-select, .player-input {
+    margin-bottom: 15px;
+}
+
+.team-select select {
+    width: 200px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.player-input input {
+    width: 200px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.total-score {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+/* 调整原有按钮样式 */
+.button-group {
+    margin: 15px 0;
+}
     </style>
 </head>
 <body>
@@ -138,7 +179,7 @@
             <label><input type="checkbox" data-special="20">劫虚济实 无漏</label>
             <label><input type="checkbox" data-special="30">战场侧面 无漏</label>
             <label><input type="checkbox" data-special="35">紧急信号灯 无漏</label>
-            <label><input type="checkbox" data-special="50">鸭速公路 无漏</label>
+            <label><input type="checkbox" data-special="60">鸭速公路 无漏</label>
         </div>
     </div>
 
@@ -244,6 +285,27 @@
         <div style="margin-top:15px;">
             最终得分：<span id="result">0</span>
         </div>
+        <div class="final-right">
+            <div class="team-select">
+                <label>当前分队：</label>
+                <select id="team">
+                    <option value="">请选择分队</option>
+                    <option value="近锋">突击战术分队</option>
+                    <option value="后勤">后勤分队</option>
+                    <option value="术特">破坏战术分队</option>
+                    <option value="重辅">堡垒战术分队</option>
+                    <option value="狙医">远程战术分队</option>
+                    <option value="点刺">点刺成锭分队</option>
+                    <option value="拟态">拟态学者分队</option>
+                    <option value="魂灵">魂灵护送分队</option>
+                    <option value="高规格">高规格分队</option>
+                    <option value="博文">医疗预备</option>
+                </select>
+            </div>
+            <div class="player-input">
+                <label>当前选手：</label>
+                <input type="text" id="player" placeholder="输入选手名称">
+            </div>
     </div>
 
     <script>
